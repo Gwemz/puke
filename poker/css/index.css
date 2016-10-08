@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(2, 65, 195, 1);
+    font-family: "Microsoft JhengHei", "Arial", "微软雅黑";
+    font-weight: normal;
+}
+
+.background {
+    background: url(../img/du.png) center center no-repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+img {
+    border: 0;
+}
+
+.scene {
+    width: 1000px;
+    height: 600px;
+    /*border:1px solid #fff;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.pai {
+    width: 120px;
+    height: 168px;
+    border: 1px solid #fff;
+    float: left;
+    border-radius: 5px;
+    background-size: 100%;
+    margin-right: 10px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    opacity: 0;
+}
+
+.scene .move-right, .scene .move-left, .start, .end, .restart, .score, .yu, .introduce {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 40px;
+    border-radius: 5px;
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    left: 570px;
+    margin-left: -100px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.introduce {
+    height: 180px;
+    padding: 5px;
+    left: 1000px;
+    margin-right: -100px;
+    line-height: 30px;
+    top: 0;
+    cursor: crosshair;
+}
+
+.introduce h2 {
+    margin: 10px 0 5px;
+}
+
+.scene .move-right {
+    bottom: 50px;
+}
+
+.scene .move-right, .scene .move-left {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    opacity: 0;
+    z-index: 200;
+}
+
+.scene .move-right {
+    left: 630px;
+}
+
+.scene .move-right:active, .scene .move-left:active, .start:active, .end:active, .restart:active {
+    background-color: rgba(2, 65, 195, 0.5);
+}
+
+.start, .end, .restart, .score, .yu {
+    top: 0;
+    left: 0;
+}
+
+.restart {
+    top: 80px;
+}
+
+.end {
+    top: 160px;
+    z-index: 100;
+}
+
+.score {
+    top: 400px;
+    cursor: auto;
+}
+
+.yu {
+    top: 480px;
+    cursor: auto;
+}
